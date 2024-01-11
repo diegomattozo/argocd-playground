@@ -1,0 +1,20 @@
+name: Hello-app CD
+on:
+  push:
+    branches:
+      - main
+jobs:
+  build:
+    name: Build
+    runs-on: ubuntu-latest
+    steps:
+      - name: checkout
+        uses: actions/checkout@v4
+
+      - name: build image and push to docker hub
+        uses: docker/build-push-action@v1.1.0
+        with:
+          username: diegomattozo
+          password: ${{ secrets.DOCKER_PASSWORD }}
+          repository: diegomattozo/argo-cd-playground
+          tags: ${{ github.sha }}, latest
