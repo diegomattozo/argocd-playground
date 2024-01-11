@@ -11,7 +11,7 @@ func main() {
 	router.LoadHTMLGlob("templates/*")
 	router.GET("/", func(c *gin.Context) {
 		c.HTML(http.StatusOK, "index.tmpl", gin.H{
-			"title": "Hello World!",
+			"title": "Hello World With ArgoCD!",
 		})
 	})
 	router.Run(":8000")
