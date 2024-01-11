@@ -9,4 +9,4 @@ namespace: hello-app
 images:
 - name: hello-app
   newName: diegomattozo/argo-cd-playground
-  newTag: caaca14dab96c54b84fa3f7277d7e3e1373f1843
+  newTag: d3e0a485eca5f7e860ee5304ef4d832623cf34b2
