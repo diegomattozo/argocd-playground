@@ -13,7 +13,7 @@ spec:
     spec:
       containers:
       - name: hello-app
-        image: diegomattozo/argo-cd-playground:latest
+        image: hello-app
         resources:
           limits:
             memory: "128Mi"
